@@ -1,6 +1,7 @@
 ## Migration of project between environments
+
 This step by step cheat sheet defines the process to follow in order to migrate an existing dev, stage, prod project to another environment. This is my approach and might not work for other potential readers.
-----
+
 ### a) For Firestore:
 1) gcloud config set project [project_name]
 2) gcloud beta firestore export gs://[project_name] --collection-ids=[coll1],[coll2]
