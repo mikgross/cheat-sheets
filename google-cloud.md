@@ -21,6 +21,8 @@ Repeat step 2 for all stroage folder needed
 ### c) App:
   1) sudo cp --verbose -r [env1]/[app_name] [env2]/[app_name]
   2) change all configs to related environment in [env2]/[app_name], change services dependng on app name such as fire-extensions
+    Typical config might include the following (not complete pleas think!):
+    a) `environment.ts` and `environment.prod.ts` files
   3) sudo ng build --prod
   4) cd dist
   5) gcloud config set project [project_name2]
@@ -28,8 +30,11 @@ Repeat step 2 for all stroage folder needed
 
 ### d) Functions:
   1) firebase use [project_id]
-  2) change CORS policies in functions if applicable
-  2) firebase deploy
+  2) change all configs to related environment in [env2]/[app_name], change services dependng on app name such as fire-extensions
+    Typical config might include the following (not complete pleas think!):
+    a) `environment.ts` and `environment.prod.ts` files
+  3) change CORS policies in functions if applicable
+  4) firebase deploy
 
 ### e) FireAuth
   1) Update authorized URLs in settings to the one of your app
