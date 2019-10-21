@@ -31,8 +31,10 @@ Repeat step 2 for all stroage folder needed
 ### d) Functions:
   1) firebase use [project_id]
   2) change all configs to related environment in [env2]/[app_name], change services dependng on app name such as fire-extensions
-    Typical config might include the following (not complete pleas think!):
-    a) `environment.ts` and `environment.prod.ts` files
+    
+      Typical config might include the following (not complete pleas think!):
+      a) `environment.ts` and `environment.prod.ts` files
+  3) Pass environment variables from [project1] to [project2]
   3) change CORS policies in functions if applicable
   4) firebase deploy
 
