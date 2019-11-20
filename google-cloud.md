@@ -5,6 +5,7 @@ This step by step cheat sheet defines the process to follow in order to migrate 
 ### a) For Firestore:
 1) gcloud config set project [project_name]
 2) gcloud beta firestore export gs://[project_name] --collection-ids=[coll1],[coll2]
+  if error: ERROR: (gcloud.beta.firestore.export) NOT_FOUND: Google Cloud Storage file does not exist, go on google cloud console and initialize firestore
 3) gcloud config set project [project_name2]
 4) Give access to service account of [porject_name2] to [project_name] on gcloud platform
 5) Initialize firestore storage in gcloud platform
