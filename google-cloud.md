@@ -26,8 +26,9 @@ Repeat step 2 for all stroage folder needed
     a) `environment.ts` and `environment.prod.ts` files
   3) sudo ng build --prod
   4) cd dist
-  5) gcloud config set project [project_name2]
-  6) gcloud app deploy --no-promote (for testing) --promote (for deployment)
+  5) copy app.yaml file from one of the sosympl projects (try to select the last one used)
+  6) gcloud config set project [project_name2]
+  7) gcloud app deploy --no-promote (for testing) --promote (for deployment)
 
 ### d) Functions:
   1) firebase use [project_id]
