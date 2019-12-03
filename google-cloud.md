@@ -9,7 +9,7 @@ This step by step cheat sheet defines the process to follow in order to migrate 
 3) gcloud config set project [project_name2]
 4) Give access to service account of [porject_name2] to [project_name] on gcloud platform
 5) Initialize firestore storage in gcloud platform
-6) gcloud beta firestore import gs://[project_name]/[save_name]/
+6) gcloud beta firestore import gs://[project_name].appspot.com/[save_name]/
 
 ### b) Google Cloud Storage:
 1) gcloud config set project [project_name]
